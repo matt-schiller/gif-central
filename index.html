@@ -1,0 +1,119 @@
+<html>
+<head>
+	<title>Snappr Gif Central</title>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<img class="logo" src="assets/images/snapprlogo-dark-500px.png">
+				<span class="brand-name">Gif Central</span>
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://github.com/matt-schiller/gif-central">Project on Github</a></li>
+				<li><a href="http://www.mdschiller.com.au">Author Portfolio</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">Photography gifs</div>
+				<div class="panel-body">
+					<a class="btn btn-primary">photography</a>
+					<a class="btn btn-primary">dslr</a>
+					<a class="btn btn-primary">camera</a>
+					<a class="btn btn-primary">photographer</a>
+					<a class="btn btn-primary">photoshoot</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Growth gifs</div>
+				<div class="panel-body">
+					<a class="btn btn-primary">growth</a>
+					<a class="btn btn-primary">growing</a>
+					<a class="btn btn-primary">massive</a>
+					<a class="btn btn-primary">up and to the right</a>
+					<a class="btn btn-primary">momentum</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Team gifs</div>
+				<div class="panel-body">
+					<a class="btn btn-primary">the a team</a>
+					<a class="btn btn-primary">the dream team</a>
+					<a class="btn btn-primary">teamwork</a>
+					<a class="btn btn-primary">team america</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Custom gifs</div>
+				<div class="panel-body" id="custom-panel">
+				</div>
+				<div class="panel-body">
+					<form class="form-horizontal" style="margin-bottom:0">
+						<fieldset>
+							<div class="form-group">
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="newTopic" placeholder="Add a new topic...">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10">
+									<button type="submit" class="btn btn-success" id="submit">Submit</button>
+									<button class="btn btn-secondary" id="clear">Clear</button>
+									<p style="font-size:9px; margin-bottom:0; margin-top:10px;">Custom gifs are saved only on your machine, until you clear them.</p>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-8" id="gif-column">
+			<div class="alert alert-dismissible alert-info">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>Hey there!</strong> Click a gif topic on the left and gifs will appear here...
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal" id="copy-modal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">URL copied</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+				<div class="modal-body">
+					<p>The URL of the gif has been copied to the clipboard.</p>
+				</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="assets/js/gif.js"></script>
+</body>
+</html>
